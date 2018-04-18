@@ -1,7 +1,7 @@
-onst TOKEN = process.env.TELEGRAM_TOKEN || 'YOUR_TELEGRAM_BOT_TOKEN';
-const gameName = process.env.TELEGRAM_GAMENAME || 'YOUR_TELEGRAM_GAMENAME';
+onst TOKEN = process.env.TELEGRAM_TOKEN || '591474766:AAF4ehNAjAn5opHKfv8YvTfKiYDEHlIDTJQ';
+const gameName = process.env.TELEGRAM_GAMENAME || 'my_game_caffee_bot';
 // Specify '0' to use ngrok i.e. localhost tunneling
-let url = process.env.URL || 'https://<PUBLIC-URL>';
+let url = process.env.URL || 'https://koverko-developer.github.io/game.html';
 const port = process.env.PORT || 8080;
 
 const TelegramBot = require('../..');
