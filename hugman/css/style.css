@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 
 body {
-	background: url('http://bgrounds.ru/_include/img/bgs/hollow-spheroids/white-hollow-spheroids.png') fixed;
+	background: url('https://pp.userapi.com/c847217/v847217409/29415/C3j7YYd2QSo.jpg') fixed;
 	text-align: center;
 	font-family: Helvetica, sans-serif;
 }
 input {
-	height : 40px;
+	height : 30px;
 	border: 2px solid #999;
 	font-family: Helvetica, sans-serif;
 	color: #999;
@@ -14,7 +14,7 @@ input {
 
 #ratefeld {
 	font-family: 'Permanent Marker', 'cursive';
-	font-size: 12.0px;
+	font-size: 16.0px;
 }
 
 h3 {
