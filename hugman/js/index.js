@@ -63,7 +63,7 @@ var pruefeZeichen = function(){
 		}
 	}
 	if(fertig){
-		window.alert("You win!");
+		location.reload();
 	}
 	
 	//once you got six wrong letters, you lose
