@@ -10,6 +10,11 @@
 
 <script>
 var x = document.getElementById("demo");
+  
+  $.getJSON('http://ip-api.com/json?callback=?', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+  x.innerHTML= JSON.stringify(data, null, 2);
+});
 
 function getLocation() {
   if (navigator.geolocation) {
