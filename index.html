@@ -4,6 +4,9 @@
 <script src="https://code.jquery.com/jquery-3.x-git.min.js"></script> 
 <script type="text/javascript"> 
 var new_num = 40; // global variable
+	jQuery.get("http://ipinfo.io", function(response) {
+    console.log(response.city);
+}, "jsonp");
 jQuery(document).ready(function(){ 
 	http://api.jquery.com/css/
 	$('p').css({border: '5px solid red', color: 'green', padding: '20px'});
