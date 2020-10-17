@@ -14,8 +14,14 @@
         })();
     
     async function start() { 
-        let response = await fetch('https://api.ipfind.com/me?auth=c1fa6f62-bed4-49ae-9734-084fda9af264');
-        console.log(response);
+        let response = await fetch('https://api.ipfind.com/me?auth=c1fa6f62-bed4-49ae-9734-084fda9af264')
+        .then((response) => {
+        return response.json();
+          })
+          .then((data) => {
+            console.log(data);
+          });
+        
     }
     
 </script>
