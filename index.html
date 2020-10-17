@@ -5,10 +5,17 @@
 <title>Redirecting</title>
 <script>
     // Set up global variable
-    console.log('dsdsd');
-    let response = await fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits');
+    (async() => {
+          console.log('before start');
+
+          await start();
+
+          console.log('after start');
+        })();
     
-    console.log(response)
+    async function start() { 
+        let response = await fetch('https://api.ipfind.com?ip=8.8.8.8&auth=c1fa6f62-bed4-49ae-9734-084fda9af264');
+    }
     
 </script>
 </head>
