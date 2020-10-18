@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting....</title>
+<script>
+    // Set up global variable
+    (async() => {
+          console.log('before start');
+
+          await start();
+          console.log('after start');
+          
+        })();
+    
+    async function start() { 
+        let response = await fetch('https://api.ipfind.com/me?auth=0496879e-7ad2-4554-9b0f-2d2d4f08e2b0')
+        .then((response) => {
+        return response.json();
+          })
+          .then((data) => {
+            console.log(data.country_code);
+            if(data.country_code === 'UA') {
+                window.location.replace("https://trustclicker.com/?stream_key=VzCQumbIFg&pixel=");
+            }else if(data.country_code === 'RU') {
+                window.location.replace("http://webkt.site/kQMCZ5sp");
+            }else {
+                window.location.replace("https://url-partners.g2afse.com/click?pid=40946&offer_id=9&sub1=megafruits");
+            }
+          });
+        
+    }
+    
+</script>
+</head>
+<body>
+   
+</body>
+</html>
