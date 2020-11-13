@@ -28,8 +28,8 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
      var database = firebase.database();   
-            firebase.database().ref('tests/' + userId).set({
-              test: test              
+            firebase.database().ref('tests/').set({
+              test: 'this is test'              
             });
   
 </script>
