@@ -25,12 +25,11 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-  function writeUserData() {
-            var database = firebase.database();   
+     var database = firebase.database();   
             firebase.database().ref('tests/' + userId).set({
               test: test              
             });
-   }
+  
 </script>
    
 </head>
