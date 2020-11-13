@@ -3,6 +3,7 @@
 <head>
 <title>Page Title</title>
   <script>
+    
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '680133556203875',
@@ -22,9 +23,15 @@
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+    FB.AppEvents.logPageView();
 </script>
 </head>
 <body>
+  
+  
+<button onclick='FB.AppEvents.logEvent("buttonClicked")'>
+  Click me
+</button>
 
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
