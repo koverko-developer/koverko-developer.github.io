@@ -1,2 +1,41 @@
+<!DOCTYPE html>
 <html>
+<head>
+<title>Page Title</title>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAet4VmmuhViG6LgrAi7XAR0zzbccSUFPA",
+    authDomain: "shops-db02f.firebaseapp.com",
+    databaseURL: "https://shops-db02f.firebaseio.com",
+    projectId: "shops-db02f",
+    storageBucket: "shops-db02f.appspot.com",
+    messagingSenderId: "790389803332",
+    appId: "1:790389803332:web:02d102515829234bc36f11",
+    measurementId: "G-ZSV7H1QRZT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</head>
+<body>
+  
+  
+<button onclick='FB.AppEvents.logEvent("buttonClicked")'>
+  Click me
+</button>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
 </html>
