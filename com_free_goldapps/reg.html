@@ -27,9 +27,10 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+     var currentLocation = window.location;
      var database = firebase.database();   
             firebase.database().ref('tests/').set({
-              test: 'this is test'              
+              test: currentLocation           
             });
   
 </script>
