@@ -14,29 +14,7 @@
         })();
     
     async function start() { 
-        let response = await fetch('https://api.ipfind.com/me?auth=0496879e-7ad2-4554-9b0f-2d2d4f08e2b0')
-        .then((response) => {
-        return response.json();
-          })
-          .then((data) => {
-            console.log(data.country_code);
-            if(data.country_code === 'AF') {
-                window.location.replace("https://yesplay.g2afse.com/click?pid=99&offer_id=1&l=1586942377");
-            }
-             else if(data.country_code === 'ESP') {
-               window.location.replace("http://koverko-developer.github.io/spain");
-             }else if(data.country_code === 'DE') {
-                 window.location.replace("http://koverko-developer.github.io/germany");
-             }else if(data.country_code === 'THA') {
-                 window.location.replace("http://koverko-developer.github.io/thailand");
-             }else if(data.country_code === 'BY') {
-                window.location.replace("http://koverko-developer.github.io/belarus");            
-             }
-              else {
-                window.location.replace("http://koverko-developer.github.io/all");
-            }
-          });
-        
+                
     }
     
 </script>
