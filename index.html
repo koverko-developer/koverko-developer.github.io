@@ -37,7 +37,8 @@ body {
   
     async function getUrl() {
       var u = window.location.href;//https://koverko-developer.github.io/media_source=dsdsd&campaign=dsadasda&af_status=dsdsd;
-      var u_1 = u.split("/");
+      var u_1 = u.split("?");
+      console.log(u_1[1]);
       var u_2 = u_1[1].split("&");
       console.log(u_2);
     }
