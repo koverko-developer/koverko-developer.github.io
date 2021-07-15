@@ -82,6 +82,42 @@ body {
            // Initialize Firebase
            firebase.initializeApp(firebaseConfig);
            firebase.analytics();
+        
+        
+        (async() => {
+          console.log('before start');
+          
+          await getUrl();
+          //await start();
+          console.log('after start');
+          
+        })();
+
+          async function getUrl() {
+            var u = window.location.href;//https://koverko-developer.github.io/postback?sub_id_2={sub2}&sub_id_3={sub3}&sub_id_4={sub4}&type={status_conversion}
+            var u_1 = u.split("?");
+            console.log(u_1[1]);
+            var u_2 = u_1[1].split("&");
+            console.log(u_2);
+            var sub_id_2 = u_2[0].split('=')[1]
+            var sub_id_3 = u_2[1].split('=')[1]
+            var sub_id_4 = u_2[2].split('=')[1]
+            var status = u_2[3].split('=')[1]
+
+            var type = ''
+            if(status.includes('deposit')) type = 'dep'
+            else if(status.includes('registration')) type = 'reg'
+
+            console.log('before start');
+            var database = firebase.database();
+            firebase.database().ref('comherroprimegolds/events/' + sub_id_4).set({
+            "type" : type
+            });
+            //await getUrl();
+            //await start();
+            console.log('after start');
+            
+            }
 
 </script>
 
