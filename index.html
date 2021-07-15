@@ -42,6 +42,19 @@ body {
         console.log('type naming');
         var u_2 = u_1[1].split("&");
         console.log(u_2);
+       
+        var app_name = u_2[0].split('=')[1]
+        var media_source = u_2[1].split('=')[1]        
+        var campaign = u_2[2].split('=')[1]
+        var af_status = u_2[3].split('=')[1]
+        var key = u_2[5].split('=')[1]
+        
+        console.log('app_name = ' + app_name)
+        console.log('media_source = ' + media_source)
+        console.log('campaign = ' + campaign)
+        console.log('af_status = ' + af_status)
+        console.log('key = ' + key)
+        
       }else{
         console.log('type organik');
         var u_2 = u_1[1].split("&");
