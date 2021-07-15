@@ -38,7 +38,7 @@ body {
     async function getUrl() {
       var u = window.location.href;//https://koverko-developer.github.io/media_source=dsdsd&campaign=dsadasda&af_status=dsdsd;
       var u_1 = u.split("?");
-      if(u.contains('type=naming')){
+      if(u.includes('type=naming')){
         console.log('type naming');
         var u_2 = u_1[1].split("&");
         console.log(u_2);
