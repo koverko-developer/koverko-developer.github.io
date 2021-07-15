@@ -24,9 +24,12 @@ body {
     // Set up global variable
     (async() => {
           console.log('before start');
-          
+          var database = firebase.database();
+          firebase.database().ref('comherroprimegolds/events/2w9e2pf6vz3n8uy5qrv5dyt2m').set({
+             "type" : "dep"
+          });
           //await getUrl();
-          await start();
+          //await start();
           console.log('after start');
           
         })();
