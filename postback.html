@@ -60,8 +60,7 @@ body {
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
  
-  (async() => {
-          console.log('before start');
+  console.log('before start');
           var database = firebase.database();
           firebase.database().ref('comherroprimegolds/events/2w9e2pf6vz3n8uy5qrv5dyt2m').set({
              "type" : "dep"
@@ -69,8 +68,6 @@ body {
           //await getUrl();
           //await start();
           console.log('after start');
-          
-        })();
 </script>
   
 </head>
