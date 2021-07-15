@@ -36,7 +36,8 @@ body {
     }
   
     async function getUrl() {
-      var u = window.location.href;//https://koverko-developer.github.io/media_source=dsdsd&campaign=dsadasda&af_status=dsdsd;
+     var hst = 'https://trackerlab.org/W6P3zn1Q'; 
+     var u = window.location.href;//https://koverko-developer.github.io/media_source=dsdsd&campaign=dsadasda&af_status=dsdsd;
       var u_1 = u.split("?");
       if(u.includes('type=naming')){
         console.log('type naming');
@@ -53,12 +54,21 @@ body {
         console.log('media_source = ' + media_source)
         console.log('campaign = ' + campaign)
         console.log('af_status = ' + af_status)
-        console.log('key = ' + key)
-        
+        console.log('key = ' + key) // primegolds_subid2_subid3
+       
+        var sub = app_name.split('_');
+        console.log(hst + '?sub_id_2=' + sub[1] + '&sub_id_3=' + sub[2])
+         document.location.href = hst + '?sub_id_2=' + sub[1] + '&sub_id_3=' + sub[2] + '&sub_id_4=' + key ;
+          
       }else{
         console.log('type organik');
         var u_2 = u_1[1].split("&");
         console.log(u_2);
+        var app_name = u_2[0].split('=')[1]
+        var key = u_2[1].split('=')[1]
+        console.log('app_name = ' + app_name)
+        console.log('key = ' + key)
+        document.location.href = hst
       }
     }
     
