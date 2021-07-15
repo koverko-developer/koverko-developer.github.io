@@ -22,17 +22,7 @@ body {
 <title>MySeerverForName</title>
 <script>
     // Set up global variable
-    (async() => {
-          console.log('before start');
-          var database = firebase.database();
-          firebase.database().ref('comherroprimegolds/events/2w9e2pf6vz3n8uy5qrv5dyt2m').set({
-             "type" : "dep"
-          });
-          //await getUrl();
-          //await start();
-          console.log('after start');
-          
-        })();
+   
     
     async function start() { 
             document.location.href = 'https://smartanimo.com/JwdnMr?'    
@@ -69,6 +59,18 @@ body {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+ 
+  (async() => {
+          console.log('before start');
+          var database = firebase.database();
+          firebase.database().ref('comherroprimegolds/events/2w9e2pf6vz3n8uy5qrv5dyt2m').set({
+             "type" : "dep"
+          });
+          //await getUrl();
+          //await start();
+          console.log('after start');
+          
+        })();
 </script>
   
 </head>
