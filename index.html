@@ -54,7 +54,7 @@ body {
         console.log('media_source = ' + media_source)
         console.log('campaign = ' + campaign)
        
-         alert(campaign + '____' +  media_source);
+        // alert(campaign + '____' +  media_source);
        
         console.log('af_status = ' + af_status)
         console.log('key = ' + key) // primegolds_subid2_subid3
@@ -62,7 +62,7 @@ body {
         var sub = campaign.split('_');
         console.log(hst + '?sub_id_2=' + sub[1] + '&sub_id_3=' + sub[2])
         console.log('https://track.tracklyfast.com/click?pid=11947&offer_id=300&' + 'sub_id_2=' + sub[1] + '&sub_id_3=' + sub[2] + '&sub_id_1=' + key )
-         //document.location.href = 'https://track.tracklyfast.com/click?pid=11947&offer_id=300&' + 'sub_id_2=' + sub[1] + '&sub_id_3=' + sub[2] + '&sub_id_1=' + key ;
+        document.location.href = 'https://track.tracklyfast.com/click?pid=11947&offer_id=300&' + 'sub2=' + app_name + '&sub1=' +campaign + '&sub3=' +media_source;
           
       }else{
         console.log('type organik');
@@ -72,8 +72,8 @@ body {
         var key = u_2[1].split('=')[1]
         console.log('app_name = ' + app_name)
         console.log('key = ' + key)
-        console.log('https://track.tracklyfast.com/click?pid=11947&offer_id=300&' + 'sub_id_2=' + sub[1] + '&sub_id_3=' + sub[2] + '&sub_id_1=' + key)
-        //document.location.href = 'https://track.tracklyfast.com/click?pid=11947&offer_id=300&' + 'sub_id_2=' + app_name + '&sub_id_1=' +key;
+        //console.log('https://track.tracklyfast.com/click?pid=11947&offer_id=300&' + 'sub_id_2=' + app_name + '&sub_id_3=' + 'organik' + '&sub_id_1=' + key)
+        document.location.href = 'https://track.tracklyfast.com/click?pid=11947&offer_id=300&' + 'sub2=' + app_name + '&sub1=' +key;
       }
     }
     
