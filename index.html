@@ -53,6 +53,13 @@ body {
         console.log('app_name = ' + app_name)
         console.log('media_source = ' + media_source)
         console.log('campaign = ' + campaign)
+       
+       var comp = document.getElementById("comp");
+       comp.textContent += campaign;
+       
+        var media = document.getElementById("media");
+       media.textContent += media_source;
+       
         console.log('af_status = ' + af_status)
         console.log('key = ' + key) // primegolds_subid2_subid3
        
@@ -102,6 +109,8 @@ body {
   
 </head>
 <body>
+ <p id="comp"></p>
+ <p id="media"</p>
  <p>Hello, App</p>
 </body>
 </html>
