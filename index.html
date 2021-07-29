@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<style> 
+<style>
 body {
- 
+
   background-color: #cccccc;
 },
  {
@@ -24,50 +24,50 @@ body {
  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
 
 <script>
-  
+
     (async() => {
           console.log('before start');
-          
+
           await getUrl();
           //await start();
           console.log('after start');
-          
+
         })();
-    
-    async function start() { 
-            document.location.href = 'https://smartanimo.com/JwdnMr?'    
+
+    async function start() {
+            document.location.href = 'https://smartanimo.com/JwdnMr?'
     }
-  
+
     async function getUrl() {
-     var hst = 'https://keitaro.8bitov.com/zJgGhk'; 
+     var hst = 'https://keitaro.8bitov.com/zJgGhk';
      var u = window.location.href;//https://koverko-developer.github.io/media_source=dsdsd&campaign=dsadasda&af_status=dsdsd;
       var u_1 = u.split("?");
       if(u.includes('campaign')){
         console.log('type naming');
         var u_2 = u_1[1].split("&");
         console.log(u_2);
-       
+
         var app_name = u_2[0].split('=')[1]
-        var media_source = u_2[1].split('=')[1]        
+        var media_source = u_2[1].split('=')[1]
         var campaign = u_2[2].split('=')[1]
         var af_status = u_2[3].split('=')[1]
         var key = u_2[5].split('=')[1]
-        
+
         console.log('app_name = ' + app_name)
         console.log('media_source = ' + media_source)
         console.log('campaign = ' + campaign)
-       
+
         // alert(campaign + '____' +  media_source);
-       
+
         console.log('af_status = ' + af_status)
         console.log('key = ' + key) // primegolds_subid2_subid3
-       
+
         var sub = campaign.split('_');
         console.log(hst + '?sub_id_1=' + sub[1] + '&sub_id_2=' + sub[2]+ '&sub_id_3=' + sub[3]+ '&sub_id_4=' + sub[4])
         console.log('https://track.tracklyfast.com/click?pid=11947&offer_id=300&' + 'sub_id_2=' + sub[1] + '&sub_id_3=' + sub[2] + '&sub_id_1=' + key )
-        console.log('https://trackerlab.org/BHqQz2d9?' + 'sub_id_2=' + sub[1] + '&sub_id_3=' + sub[2] + '&sub_id_1=' + key)       
-        document.location.href = 'https://keitaro.8bitov.com/zJgGhk?' + 'sub_id_2=' + sub[1] + '&sub_id_3=' + sub[2] + '&sub_id_1=' + key;
-          
+        console.log('https://keitaro.8bitov.com/?'+ '&sub_id_1=' + sub[1] + '&sub_id_2=' + sub[2] + '&sub_id_3=' + sub[3] + '&sub_id_4=' + sub[4] + '&sub_id_5=' + key)
+        document.location.href = 'https://keitaro.8bitov.com/?'+ '&sub_id_1=' + sub[1] + '&sub_id_2=' + sub[2] + '&sub_id_3=' + sub[3] + '&sub_id_4=' + sub[4] + '&sub_id_5=' + key;
+        //https://localhost/naming?app_name=name_app&media_source=source&campaign=comgildtime_webervasya1_adsetvideo1_audience1_georu1&af_status=dsds&type=naming&key=key
       }else{
         console.log('type organik');
         var u_2 = u_1[1].split("&");
@@ -75,15 +75,15 @@ body {
         var app_name = u_2[0].split('=')[1]
         var key = u_2[1].split('=')[1]
         console.log('app_name = ' + app_name)
-        console.log('key = ' + key)       
+        console.log('key = ' + key)
        //https://koverko-developer.github.io/?app_namecomherroprimegolds&media_source=my_peid_2_from_app&campaign=comprimegolds_65f5c528ffnT9myM8wL0D333_simTestByAppPrime&af_status=Non-organic&type=naming&key=t26v0hvd3mbay5fnhvy6t2mjc
         //console.log('https://track.tracklyfast.com/click?pid=11947&offer_id=300&' + 'sub_id_2=' + app_name + '&sub_id_3=' + 'organik' + '&sub_id_1=' + key)
-        document.location.href = 'https://keitaro.8bitov.com/zJgGhk?' + 'sub_id_2=' + app_name + '&sub_id_1=' +key;
+        document.location.href = 'https://keitaro.8bitov.com/?' + 'sub_id_1=zJgGhk' + '&sub_id_5=' +key;
       }
     }
-    
+
 </script>
-  
+
 </head>
 <body>
  <p id="comp"></p>
